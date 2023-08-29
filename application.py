@@ -1,5 +1,6 @@
 from flask import Flask
 
+# I'm using 'application' for elastic beanstalk - it recognizes 'application' but not 'app'
 application = Flask(__name__)
 
 
