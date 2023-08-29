@@ -1,18 +1,18 @@
 from flask import Flask
 
-appplication = Flask(__name__)
+application = Flask(__name__)
 
 
-@appplication.route("/")
+@application.route("/")
 def index():
     return "Hello World!"
 
 
-@appplication.route("/<string:username>")
+@application.route("/<string:username>")
 def say_hello(username):
     return f"Hello, {username}"
 
 
 if __name__ == "__main__":
-    appplication.debug = True
-    appplication.run()
+    application.debug = True
+    application.run()
